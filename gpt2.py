@@ -28,7 +28,6 @@ class GPT2:
         self.n_ctx = hparams['n_ctx']
         self.n_head = hparams['n_head']
         
-        # Explicitly load parameters by key for clarity and robustness
         self.blocks = params['blocks']
         self.ln_f = params['ln_f']
         self.wpe = params['wpe']
